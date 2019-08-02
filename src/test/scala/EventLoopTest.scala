@@ -35,6 +35,7 @@ class EventLoopTest extends UnitSpec {
         client.configureBlocking(false)
         client.register(selector,
                         SelectionKey.OP_READ,
+                        SelectionKey.OP_READ,
                         new ClientHandler(selector))
         selector.wakeup
       } catch {

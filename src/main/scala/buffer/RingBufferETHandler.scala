@@ -1,3 +1,7 @@
 package buffer
 
-class RingBufferETHandler {}
+class RingBufferETHandler {
+
+  def readET(): Unit = {}
+  def writeET(): Unit = {}
+}
